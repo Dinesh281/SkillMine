@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <StartupObject>SkillMine.ArrayProgram.Array1D.CountOddElement</StartupObject>
+	  <StartupObject>SkillMine.ArrayProgram.Array1D.FrequencyOfElement</StartupObject>
   </PropertyGroup>
 
 </Project>
