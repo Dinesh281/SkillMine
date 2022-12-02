@@ -8,7 +8,32 @@ namespace SkillMine.ArrayProgram.Array1D
     {
         public void CheckNeg(int[] b)
         {
+            for(int i = 0; i < b.Length; i++)
+            {
+                if (b[i] < 0)
+                {
+                    if (i == 0)
+                    {
+                        int j = b.Length - 1;
+                        bool isCheck = true;
+                        while (isCheck)
+                        {
+                            if (b[j] < 0)
+                                j--;
+                            else
+                                isCheck = false;
+                        }
+                        b[i] = b[j] * b[j];
+                    }
+                    else
+                    {
 
+                        b[i] = b[i-1] * b[i-1]; 
+                    }
+                }
+            }
+            Console.WriteLine("After removing the negative element in array are");
+            Console.WriteLine(string.Join(" ", b));
         }
         static void Main(string[] args)
         {
